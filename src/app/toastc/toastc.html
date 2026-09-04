@@ -1,0 +1,6 @@
+@if (toast.visible) {
+  <div class="toast-notification" [ngClass]="toast.type">
+    <span class="toast-message">{{ toast.message }}</span>
+    <button class="toast-close" (click)="close()">&times;</button>
+  </div>
+}
